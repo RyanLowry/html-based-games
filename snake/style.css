@@ -1,0 +1,19 @@
+#grid-container{
+	position:absolute;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:space-between;
+    margin:0;
+	border:1px solid black;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	overflow:hidden;
+}
+
+/* .grid{
+    border:1px solid black;
+} */
