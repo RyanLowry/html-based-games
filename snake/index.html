@@ -4,13 +4,22 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta charset="utf-8" />
 
-	<title>website</title>
+	<title>snake</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
 
 </head>
-	<body id = "body" oncontextmenu = "return false;">
+	<body id = "body">
 		<div id = "grid-container">
-		  </div>
+		</div>
+		<div id = "stats">
+			<p>TIME:<span id = "time"></span></p>
+			<br>
+			<p>PARTS:<span id = "parts">0</span></p>
+			<br>
+			<span>FPS:</span><input type="range" min="1" max="30" value="10" id="fps"> <span id = "fps-label">10</span>
+			<br>
+			<button id = "restart">RESTART</button>
+		</div>
 	</body>
 	<script src="grid.js"></script>
 	<script src="main.js"></script>
