@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta charset="utf-8" />
+
+	<title>minesweeper</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+	<body id = "body">
+		<div id = "grid-container">
+		</div>
+		<div id = "stats">
+			grid Width: <input id = "grid-width" type="number" placeholder="32" min="1" max="100">
+			<br>
+			grid Height: <input id = "grid-height" type="number" placeholder="32" min="1" max="100">
+			<br>
+			bombs: <input id = "num-bombs" type="number" placeholder="50">
+			<br>
+			lives: <input id = "num-lives" type="number" placeholder="1">
+			<br>
+			<button id = "restart">RESET</button>
+		</div>
+	</body>
+	<script src="grid.js"></script>
+	<script src="main.js"></script>
+</html>

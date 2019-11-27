@@ -1,0 +1,13 @@
+body{
+	display:flex;
+}
+#grid-container{
+	display:flex;
+	align-items:space-between;
+    margin:0;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
