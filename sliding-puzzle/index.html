@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta charset="utf-8" />
+
+	<title>Sliding puzzle</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+	<body id = "body">
+		<div id = "grid-container">
+		</div>
+		<div id = "stats">
+			Grid Size: <label for="grid-size" id = "grid-input">3</label><input oninput="document.getElementById('grid-input').innerHTML = this.value;" type="range" min="2" max="10" value="3" class="slider" id="grid-size"> 
+			<br>
+			Image opacity: <label for="opacity" id = "opac-input">.5</label><input oninput="document.getElementById('opac-input').innerHTML = this.value; document.getElementById('image').style.opacity = this.value;" step=".1" type="range" min="0" max="1" value="0.5" class="slider" id="opacity"> 
+			<br>
+			<button id = "update">Update/Reset Grid</button>
+			<button id = "shuffle">Shuffle</button>
+			<button id = "solve">Solve</button>
+			<button id = "next-solution">iterate solution</button>
+			<img id = "image" >
+			<input type="file" id="myFile"></input>
+			<p>NOTES:</p>
+			<p>Solve has a limit, usually works up to 5x5 grid, sometimes 5x5 reaches loop limit due to algorithm efficiency.</p>
+			<p>If solve loop limit reached, iterate solution will only go as far as it found solution for, hitting solve again will solve puzzle from button first hit (this is a bug)</p>
+			<p>Same goes for shuffling after hitting solve, it won't correctly solve. </p>
+			<p>sometimes need to shuffle multiple times.</p>
+			<p>Images will keep their same resolution,1920x1080 and higher usually generates slowly, recommended not past 5x5 if those resolutions</p>
+		</div>
+
+	</body>
+	<script src = "solver.js"></script>
+	<script src="grid.js"></script>
+	<script src="main.js"></script>
+</html>

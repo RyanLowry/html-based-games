@@ -1,0 +1,22 @@
+body{
+	display:flex;
+	margin:0;
+}
+#grid-container{
+	display:flex;
+	align-items:space-between;
+    margin:0;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+#image{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: -1;
+	opacity: .5;
+}
